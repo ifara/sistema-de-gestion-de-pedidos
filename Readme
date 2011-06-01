@@ -1,0 +1,103 @@
+
+							Horarios UNI
+
+Release 0.1 (Marzo 20, 2011)
+
+====================================================================
+							Horarios UNI
+====================================================================
+
+Contenido
+--------
+
++ Introducción
++ Características
+  - Soportadas
+  - Por implementar
++ Licencia de Software
++ Instrucciones de Uso
+  - Notas adicionales para Windows
+
+--------------------------------------------------------------------
+Introducción
+--------------------------------------------------------------------
+
+"Horarios UNI" permite generar horarios a partir de archivos csv o txt
+que se encuentren estructurados de una manera particula.(Véase los
+ejemplos ubicados en la carpeta Test).
+
+En el desarrollo de "Horarios UNI" se ha utilizado:
+	
+	Python 2.6	: Como lenguaje de programación.
+	
+	PyQt 4.8	: Conjunto de herramientas para el desarollo de la
+					interfaz.
+					
+	Pyfpdf 1.54	: Paquete para la generación de archivos PDF.
+		
+	Evolus Pencil 1.2: Para el maquetado de la interfaz.
+	
+	Epydoc 3.0.1: en la generación de documentación.
+	
+	PIL			: Para la inclusión del logo en el archivo PDF.
+	
+El sitio de distribución principal para esta aplicación se encuentra en:
+
+		http://code.google.com/p/horarios-uni/
+
+--------------------------------------------------------------------
+Características
+--------------------------------------------------------------------
+
++ Soportadas
+
+	- Compatible con cualquier sistema operativo compatible con Python
+	 (Linux, Windows)
+	- Lecturas de archivos csv o txt para generar Horarios, estos
+		archivos tienen un formato dado -limitado-
+	- Impresión de los horarios generados en formato PDF
+
++ Por implementar
+	
+	- Lectura de archivos pdf, txt o csv de manera más manejable.
+	- Soportar cruzes de horarios.
+	
+--------------------------------------------------------------------
+Licencia de Software
+--------------------------------------------------------------------
+
+	Véase el archivo COPYING
+
+--------------------------------------------------------------------
+Instrucciones de Uso
+--------------------------------------------------------------------
+
+Para una lista de cambios vea el archivo changelog:
+
+1. Prerequisitos.
+
+   Depende de: Python 2.6, PyQT 4.8 , PyPDF(incluido) y PIL(Python
+    Imaging Library).
+
+2. Para ejecutar la aplicación en la terminal:
+	# cd 'Horarios UNI'
+	# python Horario_UNI.pyw
+
+3. Se debe de seleccionar el archivo que contiene la lista de todos los
+	horarios de las secciones disponibles, se pueden ver ejemplos de
+	los formatos soportados en los archivos *.csv y *.txt contenidos en
+	la carpeta test
+	
+4. Una vez seleccionado el archivo, se escoge el formato: FIIS o FIM
+	de momento, ambos tipos se encuentran en la carpeta test.
+	
+5. Luego de ello se seleccionan los cursos y/o secciones a tomar en
+	cuenta y los horarios son generados automáticamente.
+	
+--------------------------------------------------------------------
+Notas Adicionales para Windows
+--------------------------------------------------------------------
+
+Para ejecutar sobre Windows, debemos de instalar Python, PyQt y PIL.
+Es recomendable agregar Python al Path para poder ejecutar la aplicación
+con un doble click.

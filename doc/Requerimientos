@@ -1,0 +1,59 @@
+ ===========================
+ Vista inicial del Problema
+ ===========================
+ 
+ 1. Se necesita una aplicación de Escritorio.
+ 2. Se tiene un resumen de la estructura de Tablas de la Base de Datos:
+ 
+	* Se tienen categorías de comida como Pizza, Nudel, Schnitzel ..
+	* y en cada categoría tenemos algunos items de comida
+	* Cada item de comida tiene diferentes tamaños o cantidades como:
+		Pequeño, Grande, Familiar y para Fiesta.
+	* El cliente es quien ordena la comida
+	* Las órdenes son almacenadas en una tabla extra
+	
+3. Casos de USO
+
+	3.1 El cliente llama y dice su número de cliente, o su número 
+		de teléfono. Una función de autocompletado sería útil.
+		
+		Si el cliente existe su información será compeltada en el formu-
+		lario (ID, Número de teléfono, Nombre, Calle, Ciudad, email, 
+		detalles extra ..) y si no existe el usuario del sistema ingre-
+		sará esta información y almacenada automaticamente al imprimir
+		la orden.
+		
+	3.2 Después de llenar la información del cliente nosotros podemos
+		aceptar la orden y llenar la segunda aprte del formulario que
+		luce como sigue:
+		
+		Cantidad  ||  Código de Producto  ||  Descripción  ||  Precio
+		
+		donde nosotros agregaremos por ejemplo:
+		
+		1         ||  32 .. y la descripción y precio son completados
+							automaticamente desde los Items de comida y
+							la tabla de precios.
+		
+		y el cursor será localizado en el campo descripción  y si es
+		posible se agregarán o removeran ingredientes presionando las
+		teclas + o -. Si nosotros agregamos o removemos ingredientes el
+		precio debe de actualizarse.
+		
+	3.3 Después de completar la orden el usuario aceptará el pedido e
+		imprimirá los detalles de la orden y se almacenarán los datos de
+		la orden en la tabla pedidos.
+		
+	3.4 Nosotros tendremos la posibilidad de imprimir la orden diaria y
+		asignar cada orden a un repartidor, también debe de ser posible
+		mostrar reportes por cada repartidor.
+		
+	3.5 Se debve de contar también con la posibilidad de enviar mensajes
+	de correo electrónico a los clientes a través de un editor de texto.
+	
+	3.6 En el área de administración se debe de poder
+		=> Cliente: Agregar/Actualizar/Remover
+		=> Categorías: Agregar/Actualizar/Remover
+		=> Productos:  Agregar/Actualizar/Remover
+		=> Ingredientes por categoría: Agregar/Actualizar/Remover
+		=> Eliminar detalles de órdenes.
