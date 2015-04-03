@@ -1,0 +1,1 @@
+Aplicación de Escritorio que administra la recepción de pedidos por teléfono para un centro de comida rápida, incluyendo desde la toma de datos del cliente hasta la asignación de un repartidor.
